@@ -91,7 +91,7 @@
 			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="200" height="50" color="[zompact_recipecellcbr]" type="sliced" fillcenter="false" />	
 			<texture depth="2" name="zompactItemBackground" size="200,50" texture="[zompact_recipecell]" material="Materials/Transparent Colored" pos="0,0" />
 			<sprite depth="3" name="background" width="44" height="44" pos="3,-3" color="[darkGrey]"/>
-			<sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{recipeicon}" color="{recipeicontint}" size="50,45" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{recipeicon}" color="{recipeicontint}" size="50,50" pos="2,-2" foregroundlayer="true" />
 			<label depth="5" name="Name" pos="50,-0" width="145" height="50" text="{recipename}" font_size="26" color="{hasingredientsstatecolor}" justify="center" />
 			<sprite depth="5" name="Favorite" sprite="server_favorite" size="14,14" pos="180,-3" visible="{isfavorite}" foregroundlayer="true"/>
 			<sprite depth="4" name="Unlocked" sprite="{unlockicon}" size="20,20" pos="175,-25" visible="{isunlockable}" color="{unlockstatecolor}" foregroundlayer="true" />

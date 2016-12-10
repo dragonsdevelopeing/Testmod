@@ -151,60 +151,61 @@
 	<window name="HUDWorldStats" width="468" height="30" anchor="CenterBottom" >
 		<sprite depth="1" name="backgroundMain" pos="-904,30" width="595" height="30" color="[zompact_hudstatbarcolour]" type="sliced" fillcenter="true" globalopacitymod="2" />
 		<texture name="zompactItemBackground" depth="2" size="635,42" texture="[zompact_hudleft]" material="Materials/Transparent Colored" pos="-945,40" />
-		<grid name="content" pos="-904,30" rows="1" cols="5" width="468" cell_width="117" cell_height="30" repeat_content="false" controller="InGameHUD" side="left" >
+		<grid name="content" pos="-904,30" rows="1" cols="5" width="468" cell_width="107" cell_height="30" repeat_content="false" controller="InGameHUD" side="left" >
 			<!-- Day -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="dayIcon" width="24" height="24" pos="40,-1" sprite="ui_game_symbol_clock" color="[zompact_hudlefticons]" foregroundlayer="true"/>
+				<sprite depth="3" name="dayIcon" width="24" height="24" pos="70,-1" sprite="ui_game_symbol_keypad" color="136,95,219" foregroundlayer="true"/>
 			</rect>
 			<!-- Time -->
 			<rect width="117" height="30">
+			<sprite depth="3" name="dayIcon" width="24" height="24" pos="25,-1" sprite="ui_game_symbol_clock" color="136,95,219" foregroundlayer="true"/>
 			</rect>
-			<!-- Map Temp -->
+			<!-- Player Level -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="tempIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_temperature" color="[zompact_hudlefticons]" foregroundlayer="true"/>
-				<label depth="4" name="tempLabel" pos="0,0" width="117" height="30" text="{maptemperature}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudlefttext]" controller="MapStats"/>
-			</rect>	
+				<sprite depth="3" name="levelTrophy" width="24" height="24" pos="70,-1" sprite="ui_game_symbol_trophy" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="levelNumber" pos="80,0" width="80" height="30" text="{playerlevel}" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
+			</rect>
 			<!-- Elevation -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="elevIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_climb" color="[zompact_hudlefticons]" foregroundlayer="true"/>
-				<label depth="4" name="elevLabel" pos="0,0" width="117" height="30" text="{mapelevation} M[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudlefttext]" controller="MapStats"/>
+				<sprite depth="3" name="elevIcon" width="24" height="24" pos="60,-1" sprite="ui_game_symbol_climb" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="elevLabel" pos="65,0" width="117" height="30" text="{mapelevation} M[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudlefttext]" controller="MapStats"/>
 			</rect>
 			<!-- Wind -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="windIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_wind" color="[zompact_hudlefticons]" foregroundlayer="true"/>
-				<label depth="4" name="windLabel" pos="0,0" width="117" height="30" text="{mapwind} MPH[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudlefttext]" controller="MapStats"/>
+				<sprite depth="3" name="windIcon" width="24" height="24" pos="60,-1" sprite="ui_game_symbol_wind" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="windLabel" pos="65,0" width="117" height="30" text="{mapwind} MPH[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudlefttext]" controller="MapStats"/>
 			</rect>
 		</grid>
 	</window>
 	<!-- Player Stats Window PVE -->
 	<window name="HUDPlayerStats1" width="468" height="30" anchor="CenterBottom" >
-		<sprite depth="1" name="backgroundMain" pos="284,30" width="595" height="30" color="[zompact_hudstatbarcolour]" type="sliced" fillcenter="true" globalopacitymod="2" />
+		<sprite depth="1" name="backgroundMain" pos="284,30" width="395" height="30" color="[zompact_hudstatbarcolour]" type="sliced" fillcenter="true" globalopacitymod="2" />
 		<texture name="zompactItemBackground" depth="2" size="635,42" texture="[zompact_hudright]" material="Materials/Transparent Colored" pos="284,40" />
 		<grid name="content" pos="296,30" rows="1" cols="5" width="468" cell_width="117" cell_height="30" repeat_content="false" controller="InGameHUD" side="left" >
-			<!-- Player Level -->
+			<!-- Map Temp -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="levelTrophy" width="24" height="24" pos="10,-1" sprite="ui_game_symbol_trophy" color="[zompact_hudrighticons]" foregroundlayer="true"/>
-				<label depth="4" name="levelNumber" pos="0,0" width="117" height="30" text="{playerlevel}" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
-			</rect>
+				<sprite depth="3" name="tempIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_temperature" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="tempLabel" pos="-20,0" width="117" height="30" text="{maptemperature}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudlefttext]" controller="MapStats"/>
+			</rect>	
 			<!-- Core Temp -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="tempIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_character" color="[zompact_hudrighticons]" foregroundlayer="true"/>
-				<label depth="4" name="PlayerTemp" pos="0,0" width="117" height="30" text="{playercoretemp}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
+				<sprite depth="3" name="tempIcon" width="24" height="24" pos="-50,-1" sprite="ui_game_symbol_character" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="PlayerTemp" pos="-50,0" width="117" height="30" text="{playercoretemp}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
 			</rect>
 			<!-- Zombie Kills -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="tempIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_zombie" color="[zompact_hudrighticons]" foregroundlayer="true"/>
-				<label depth="4" name="PlayerTemp" pos="0,0" width="117" height="30" text="{playerzombiekills}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
+				<sprite depth="3" name="tempIcon" width="24" height="24" pos="-70,-1" sprite="ui_game_symbol_zombie" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="PlayerTemp" pos="-80,0" width="117" height="30" text="{playerzombiekills}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
 			</rect>
 			<!-- Player Deaths -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="tempIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_death" color="[zompact_hudrighticons]" foregroundlayer="true"/>
-				<label depth="4" name="PlayerTemp" pos="0,0" width="117" height="30" text="{playerdeaths|once}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
+				<sprite depth="3" name="tempIcon" width="24" height="24" pos="-120,-1" sprite="ui_game_symbol_death" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" name="PlayerTemp" pos="-140,0" width="117" height="30" text="{playerdeaths|once}[-]" font_size="26" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow"/>
 			</rect>
 			<!-- Player Items Crafted -->
 			<rect width="117" height="30">
-				<sprite depth="3" name="windowIcon" width="24" height="24" pos="0,-1" sprite="ui_game_symbol_hammer" color="[zompact_hudrighticons]" foregroundlayer="true"/>
-				<label depth="4" pos="0,0" width="117" height="30" font_size="26" text="{playeritemscrafted}[-]" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow" />
+				<sprite depth="3" name="windowIcon" width="24" height="24" pos="-175,-1" sprite="ui_game_symbol_hammer" color="136,95,219" foregroundlayer="true"/>
+				<label depth="4" pos="-200,0" width="117" height="30" font_size="26" text="{playeritemscrafted}[-]" effect="outline" upper_case="true" justify="center" color="[zompact_hudrighttext]" controller="PlayerStatsWindow" />
 			</rect>
 		</grid>	
 	</window>
@@ -318,7 +319,7 @@
 	</rect>
 	<!-- Item Amount and Timer End -->
 	<!-- Crafting Controls Start -->
-	<grid name="itemActions" rows="5" cols="1" pos="0,0" width="75" cell_width="75" cell_height="50" controller="ItemActionList">
+	<grid name="itemActions" rows="5" cols="1" pos="0,-200" width="75" cell_width="75" cell_height="50" controller="ItemActionList">
 		<item_action_entry />
 		<item_action_entry />
 		<item_action_entry />
@@ -349,7 +350,7 @@
 	
 	<!-- Crafting Recipes List Start --> 
 	<window name="windowCraftingList" width="400" height="450" controller="CraftingListInfo" panel="Left">
-	<rect name="position" pos="0,0">
+	<rect name="position" pos="0,-200">
 	<sprite depth="1" name="backgroundMain" pos="0,0" width="400" height="50" color="[zompact_flatthemecolor]" type="sliced" fillcenter="true" globalopacitymod="2" />	
 	<sprite depth="1" name="backgroundMainmenu" pos="-50,0" width="45" height="397" color="[zompact_flatthemecolor]" type="sliced" fillcenter="true" globalopacitymod="2" />
 	<sprite depth="1" name="backgroundMainsearch" pos="0,-55" width="255" height="50" color="[zompact_flatthemecolor]" type="sliced" fillcenter="true" globalopacitymod="2" />
@@ -402,7 +403,7 @@
 	<!-- Crafting Recipes List End --> 
 	<!-- Crafting Queue Start -->
 	<window name="windowCraftingQueue" width="0" panel="Center" depth="10">
-		<rect depth="0" pos="-210,-410" width="50" controller="CraftingQueue">
+		<rect depth="0" pos="-210,-610" width="50" controller="CraftingQueue">
 			<grid name="queue" rows="1" cols="4" pos="0,-2" cell_width="50" cell_height="50" repeat_content="true">
 				<recipe_stack name="0"/>
 			</grid>
@@ -592,7 +593,7 @@
 		<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="32,32" pos="960,-8" color="[zompact_windownameicons]" foregroundlayer="true" />
 		
 		<panel name="content" width="100%" height="500" depth="0" pos="0,-55" disableautobackground="true">
-			<grid depth="1" name="inventory" rows="4" cols="16" pos="0,0" cell_width="[zompact_backpackcellsize]" cell_height="[zompact_backpackcellsize]" controller="Backpack" repeat_content="true" >
+			<grid depth="1" name="inventory" rows="[zompact_backpackrows]" cols="[zompact_backpackcolumns]" pos="0,0" cell_width="[zompact_backpackcellsize]" cell_height="[zompact_backpackcellsize]" controller="Backpack" repeat_content="true" >
 				<item_stack_backpack name="0"/>
 			</grid>
 		</panel>
@@ -1424,7 +1425,7 @@
 		<sprite depth="2" name="windowIcon" size="30,30" pos="5,-7" sprite="ui_game_symbol_loot_sack" color="[zompact_windownameicons]"/>
 		<label depth="2" name="windowName" pos="0,-10" width="[zompact_minibikebasketwidth]" height="30" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" justify="center" font_size="26" color="[zompact_windownametext]"/>
 	<!-- Minibike Inventory Start -->	
-		<grid depth="2" name="inventory" rows="16" cols="6" pos="-300,-55" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
+		<grid depth="2" name="inventory" rows="[zompact_minibikebasketcolumns]" cols="[zompact_minibikebasketrows]" pos="0,-55" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
 			<lootstack name="0"/>
 		</grid>
 	<!-- Minibike Inventory End -->
