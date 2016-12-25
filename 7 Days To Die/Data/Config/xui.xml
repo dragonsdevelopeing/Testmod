@@ -199,5 +199,62 @@
 		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
 			<window name="windowRWGPreview" />
 		</window_group>
+		<!-- Valmod Additions -->
+		<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowValoven" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_dyeStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowValdye" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationArmory" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowValarmory" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_workstationMerchant" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowValmerchant" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationDecor" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowValdecor" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_simpleForge" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowForge" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationCombine" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+			<window name="HUDClothing" /><!-- Equipped Clothing //D2D -->
+		</window_group>	
 	</ruleset>
 </xui>
