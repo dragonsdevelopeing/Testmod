@@ -64,6 +64,11 @@
 		<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60"/>
 		<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80"/>
 		<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100"/>
+		<requirement perk_level="6" required_skill_name="Athletics" required_skill_level="120"/>
+		<requirement perk_level="7" required_skill_name="Athletics" required_skill_level="140"/>
+		<requirement perk_level="8" required_skill_name="Athletics" required_skill_level="160"/>
+		<requirement perk_level="9" required_skill_name="Athletics" required_skill_level="180"/>
+		<requirement perk_level="10" required_skill_name="Athletics" required_skill_level="200"/>
 		<effect name="MinWellness">
 			<add perk_level="0" value="0"/>
 			<add perk_level="1" value="10"/>
@@ -168,30 +173,42 @@
 		<recipe name="blunderbuss" unlock_level="15"/>
 		<recipe name="Lockpick" unlock_level="20"/>
 	</player_skill>
-	<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" always_fire="true" group="scavenging">
+	<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" always_fire="true" group="scavenging">
 		<requirement perk_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
-		<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="25"/>
-		<requirement perk_level="3" required_skill_name="Scavenging" required_skill_level="50"/>
-		<requirement perk_level="4" required_skill_name="Scavenging" required_skill_level="75"/>
-		<requirement perk_level="5" required_skill_name="Scavenging" required_skill_level="100"/>
-		<requirement perk_level="6" required_skill_name="Scavenging" required_skill_level="125"/>		
+		<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="15"/>
+		<requirement perk_level="3" required_skill_name="Scavenging" required_skill_level="25"/>
+		<requirement perk_level="4" required_skill_name="Scavenging" required_skill_level="50"/>
+		<requirement perk_level="5" required_skill_name="Scavenging" required_skill_level="75"/>
+		<requirement perk_level="6" required_skill_name="Scavenging" required_skill_level="100"/>
+		<requirement perk_level="7" required_skill_name="Scavenging" required_skill_level="125"/>
+		<requirement perk_level="8" required_skill_name="Scavenging" required_skill_level="150"/>
+		<requirement perk_level="9" required_skill_name="Scavenging" required_skill_level="170"/>
+		<requirement perk_level="10" required_skill_name="Scavenging" required_skill_level="200"/>		
 		<effect name="LootTime">
 			<multiply perk_level="0" value="1"/>
-			<multiply skill_level="1" value="0.75"/>
-			<multiply skill_level="2" value="0.5"/>
-			<multiply skill_level="3" value="0.25"/>
-			<multiply skill_level="4" value="0.20"/>
-			<multiply skill_level="5" value="0.15"/>
-			<multiply skill_level="6" value="0.10"/>			
+			<multiply skill_level="1" value="0.95"/>
+			<multiply skill_level="2" value="0.75"/>
+			<multiply skill_level="3" value="0.65"/>
+			<multiply skill_level="4" value="0.55"/>
+			<multiply skill_level="5" value="0.45"/>
+			<multiply skill_level="6" value="0.30"/>
+			<multiply skill_level="7" value="0.25"/>
+			<multiply skill_level="8" value="0.20"/>
+			<multiply skill_level="9" value="0.15"/>
+			<multiply skill_level="10" value="0.10"/>			
 		</effect>
 	</perk>
-	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
-		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
-		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="30"/>
-		<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="60"/>
-		<requirement skill_level="4" required_skill_name="Scavenging" required_skill_level="90"/>
-		<requirement skill_level="5" required_skill_name="Scavenging" required_skill_level="120"/>
-		<requirement skill_level="6" required_skill_name="Scavenging" required_skill_level="150"/>		
+	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
+		<requirement perk_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="15"/>
+		<requirement perk_level="3" required_skill_name="Scavenging" required_skill_level="25"/>
+		<requirement perk_level="4" required_skill_name="Scavenging" required_skill_level="50"/>
+		<requirement perk_level="5" required_skill_name="Scavenging" required_skill_level="75"/>
+		<requirement perk_level="6" required_skill_name="Scavenging" required_skill_level="100"/>
+		<requirement perk_level="7" required_skill_name="Scavenging" required_skill_level="125"/>
+		<requirement perk_level="8" required_skill_name="Scavenging" required_skill_level="150"/>
+		<requirement perk_level="9" required_skill_name="Scavenging" required_skill_level="170"/>
+		<requirement perk_level="10" required_skill_name="Scavenging" required_skill_level="200"/>			
 		<effect name="LootQuality">
 			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="25"/>
@@ -199,7 +216,11 @@
 			<add skill_level="3" value="100"/>
 			<add skill_level="4" value="125"/>
 			<add skill_level="5" value="150"/>
-			<add skill_level="6" value="175"/>			
+			<add skill_level="6" value="175"/>
+			<add skill_level="7" value="200"/>
+			<add skill_level="8" value="225"/>
+			<add skill_level="9" value="250"/>
+			<add skill_level="10" value="275"/>			
 		</effect>
 	</perk>
 	<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
@@ -316,17 +337,25 @@
 		</effect>
 		<effect name="StaminaDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply skill_level="1" value="0.9"/>
-			<multiply skill_level="2" value="0.8"/>
-			<multiply skill_level="3" value="0.7"/>
-			<multiply skill_level="4" value="0.6"/>
-			<multiply skill_level="5" value="0.5"/>
+			<multiply skill_level="1" value="1"/>
+			<multiply skill_level="2" value="0.9"/>
+			<multiply skill_level="3" value="0.85"/>
+			<multiply skill_level="4" value="0.8"/>
+			<multiply skill_level="5" value="0.7"/>
+			<multiply skill_level="1" value="0.6"/>
+			<multiply skill_level="2" value="0.5"/>
+			<multiply skill_level="3" value="0.40"/>
+			<multiply skill_level="4" value="0.30"/>
+			<multiply skill_level="5" value="0.20"/>			
 		</effect>
 	</perk>
 	<perk name="The Decapitator" icon="knife" description_key="theDecapitatorDesc" title_key="decapitator" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 		<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="50"/>
 		<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="75"/>
 		<requirement perk_level="3" required_skill_name="Blade Weapons" required_skill_level="100"/>
+		<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="150"/>
+		<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="175"/>
+		<requirement perk_level="3" required_skill_name="Blade Weapons" required_skill_level="200"/>		
 		<effect name="DismembermentChance">
 			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="0.1"/>
@@ -560,7 +589,10 @@
 			<multiply skill_level="130,140" value="1.3,1.2" />
 			<multiply skill_level="140,150" value="1.2,1.1" />
 			<multiply skill_level="150,160" value="1.1,1.05" />
-			<multiply skill_level="160,170" value="1.05,1." />			
+			<multiply skill_level="160,170" value="1.05,1." />
+			<multiply skill_level="170,180" value="1,0.9" />
+			<multiply skill_level="180,190" value="0.9,0.8" />
+			<multiply skill_level="190,200" value="0.8,0.7" />			
 		</effect>
 
 		<recipe name="gunPistol" unlock_level="20"/>
@@ -593,10 +625,13 @@
 			<multiply skill_level="10" value="1.8"/>
 		</effect>
 	</perk>
-	<perk name="Dead Shot" icon="pistol" description_key="deadShotDesc2" title_key="deadShot" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
-		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="50"/>
-		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="75"/>
-		<requirement perk_level="3" required_skill_name="Pistols" required_skill_level="100"/>
+	<perk name="Dead Shot" icon="pistol" description_key="deadShotDesc2" title_key="deadShot" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
+		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="25"/>
+		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="50"/>
+		<requirement perk_level="3" required_skill_name="Pistols" required_skill_level="75"/>
+		<requirement perk_level="4" required_skill_name="Pistols" required_skill_level="100"/>
+		<requirement perk_level="5" required_skill_name="Pistols" required_skill_level="125"/>
+		<requirement perk_level="6" required_skill_name="Pistols" required_skill_level="150"/>		
 		<effect name="DismembermentChance">
 			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="0.1"/>
@@ -714,6 +749,9 @@
 			<multiply skill_level="140,150" value="1.2,1.1" />
 			<multiply skill_level="150,160" value="1.1,1.05" />
 			<multiply skill_level="160,170" value="1.05,1." />
+			<multiply skill_level="170,180" value="1,0.9" />
+			<multiply skill_level="180,190" value="0.9,0.8" />
+			<multiply skill_level="190,200" value="0.8,0.7" />				
 		</effect>
 		<recipe name="gunSawedOffPumpShotgun" unlock_level="15"/>
 		<recipe name="gunPumpShotgun" unlock_level="20"/>
@@ -745,10 +783,17 @@
 			<multiply skill_level="10" value="1.8"/>
 		</effect>
 	</perk>
-	<perk name="Splatter Gun" icon="shotgun" description_key="splatterGunDesc" title_key="splatterGun" max_level="6" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
-		<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="50"/>
-		<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="75"/>
-		<requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="100"/>
+	<perk name="Splatter Gun" icon="shotgun" description_key="splatterGunDesc" title_key="splatterGun" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
+		<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="15"/>
+		<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="25"/>
+		<requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="50"/>
+		<requirement perk_level="4" required_skill_name="Shotguns" required_skill_level="100"/>
+		<requirement perk_level="5" required_skill_name="Shotguns" required_skill_level="125"/>
+		<requirement perk_level="6" required_skill_name="Shotguns" required_skill_level="150"/>
+		<requirement perk_level="7" required_skill_name="Shotguns" required_skill_level="165"/>
+		<requirement perk_level="8" required_skill_name="Shotguns" required_skill_level="175"/>
+		<requirement perk_level="9" required_skill_name="Shotguns" required_skill_level="185"/>
+		<requirement perk_level="10" required_skill_name="Shotguns" required_skill_level="195"/>
 		<effect name="DismembermentChance">
 			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="0.1"/>
@@ -757,6 +802,10 @@
 			<add skill_level="4" value="0.4"/>
 			<add skill_level="5" value="0.5"/>
 			<add skill_level="6" value="0.6"/>
+			<add skill_level="7" value="0.7"/>
+			<add skill_level="8" value="0.8"/>
+			<add skill_level="9" value="0.9"/>
+			<add skill_level="10" value="0.95"/>
 		</effect>
 	</perk>
 	<action_skill name="Rifles" exp_to_level="150" icon="rifle" description_key="Do more damage with rifles and reduce the quality loss from repairs. Gain skill by using items from this group. Level up to 20 to be able to assemble hunting rifles. Level 40 unlocks the sniper rifle." title_key="rifles" group="firearms">
@@ -865,6 +914,9 @@
 			<multiply skill_level="140,150" value="1.2,1.1" />
 			<multiply skill_level="150,160" value="1.1,1.05" />
 			<multiply skill_level="160,170" value="1.05,1." />
+			<multiply skill_level="170,180" value="1,0.9" />
+			<multiply skill_level="180,190" value="0.9,0.8" />
+			<multiply skill_level="190,200" value="0.8,0.7" />			
 		</effect>
 		<recipe name="gunHuntingRifle" unlock_level="10"/>
 		<recipe name="gunBoltRifle" unlock_level="20"/>
@@ -1008,6 +1060,9 @@
 			<multiply skill_level="140,150" value="1.2,1.1" />
 			<multiply skill_level="150,160" value="1.1,1.05" />
 			<multiply skill_level="160,170" value="1.05,1." />
+			<multiply skill_level="170,180" value="1.0,0.9" />
+			<multiply skill_level="180,190" value="0.9,0.8" />
+			<multiply skill_level="190,200" value="0.8,0.7" />			
 		</effect>
 		<recipe name="gunMP5" unlock_level="20"/>
 		<recipe name="gunMP5Silenced" unlock_level="30"/>
@@ -1350,6 +1405,11 @@
 			<multiply skill_level="32,49" value=".741,.667" />
 			<multiply skill_level="49,70" value=".667,.591" />
 			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="100,120" value="0.5,0.45" />
+			<multiply skill_level="120,140" value="0.45,0.40" />
+			<multiply skill_level="14,160" value="0.40,0.35" />
+			<multiply skill_level="160,180" value="0.35,0.30" />
+			<multiply skill_level="180,200" value="0.30,0.25" />
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -1359,18 +1419,33 @@
 			<setvalue skill_level="32,49" value="259,334" />
 			<setvalue skill_level="49,70" value="334,409" />
 			<setvalue skill_level="70,100" value="409,500" />
+			<setvalue skill_level="100,120" value="500,510" />
+			<setvalue skill_level="120,140" value="510,520" />
+			<setvalue skill_level="140,160" value="520,530" />
+			<setvalue skill_level="160,180" value="530,540" />
+			<setvalue skill_level="180,190" value="540,550" />
+			<setvalue skill_level="190,200" value="550,560" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,10" value="1.00,0.90"/>
+			<multiply skill_level="10,20" value="0.90,0.85"/>
+			<multiply skill_level="20,30" value="0.85,0.80"/>
+			<multiply skill_level="30,40" value="0.80,0.75"/>
+			<multiply skill_level="40,50" value="0.75,0.70"/>
+			<multiply skill_level="50,60" value="0.70,0.65"/>
+			<multiply skill_level="60,70" value="0.65,0.60"/>
+			<multiply skill_level="70,80" value="0.60,0.55"/>
+			<multiply skill_level="80,90" value="0.55,0.50"/>
+			<multiply skill_level="90,100" value="0.50,0.45"/>
+			<multiply skill_level="100,120" value="0.45,0.40"/>
+			<multiply skill_level="120,130" value="0.40,0.35"/>
+			<multiply skill_level="130,140" value="0.35,0.30"/>
+			<multiply skill_level="140,150" value="0.30,0.25"/>
+			<multiply skill_level="150,160" value="0.25,0.20"/>
+			<multiply skill_level="160,170" value="0.20,0.18"/>
+			<multiply skill_level="170,180" value="0.18,0.17"/>
+			<multiply skill_level="180,190" value="0.17,0.16"/>
+			<multiply skill_level="190,200" value="0.16,0.15"/>			
 		</effect>
 		<effect name="RepairAmount">
 			<add skill_level="1,10" value="1,21"/>

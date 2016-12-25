@@ -2140,6 +2140,7 @@ which does not exist, yet. -->
  	<property name="DegradationBreaksAfter" value="false" />
 	<property name="SoundJammed" value="ItemNeedsRepair" />
  	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="CrosshairOnAim" value="true" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
 		<property name="Hitmask_override" value="Arrow" />
@@ -2224,6 +2225,21 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
+<item id="155" name="50CalBulletHP">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
+	<property name="Material" value="brass" />
+	<property name="HoldType" value="21" />
+	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="EconomicValue" value="19" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="14,30" />
+		<property name="BlockDamage" value="5.4,13.5" />
+			</property>
+</item>
+
 <item id="156" name="shotgunShell">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
 	<property name="Material" value="lead" />
@@ -2253,6 +2269,20 @@ which does not exist, yet. -->
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+</item>
+
+<item id="158" name="50CalBulletAP">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
+	<property name="Material" value="brass" />
+	<property name="HoldType" value="21" />
+	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="EconomicValue" value="19" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="BlockDamage" value="25.4,53.5" />
+		</property>
 </item>
 
 <item id="159" name="rocket">
@@ -2306,6 +2336,21 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Resources,Chemicals" />
 	<property name="RepairAmount" value="100" />
+</item>
+
+<item id="162" name="50CalBulletINC">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
+	<property name="Material" value="brass" />
+	<property name="HoldType" value="21" />
+	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="EconomicValue" value="19" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="BlockDamage" value="5.4,13.5" />
+		<property name="ApplyBuff" value="1, 1" param1="burningMedium" />
+	</property>		
 </item>
 
 <item id="164" name="arrow">
@@ -2455,7 +2500,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
-<!-- <item id="170" name="crossbowBolt">
+<item id="170" name="crossbowBolt">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab" />
 	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_stonePrefab" />
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_stonePrefab" />
@@ -2486,7 +2531,7 @@ which does not exist, yet. -->
 	</property>
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	<property name="Group" value="Ammo/Weapons" />
-</item> -->
+</item>
 
 <item id="171" name="ironCrossbowBolt">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab" />
@@ -9782,6 +9827,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="ironCrossbowDesc"/>
 		<property name="RepairTools" value="wood" />
 		<property name="FuelValue" value="40" />
+		<property name="CrosshairOnAim" value="true" />		
 		<property class="Action0">
 			<property name="Range" value="220" />
 		</property>
@@ -10004,6 +10050,7 @@ which does not exist, yet. -->
 	<item id="1624" name="crossbowRepeater">
 		<property name="Extends" value="crossbow" />
 		<property name="DescriptionKey" value="crossbowRepeaterDesc"/>
+		<property name="CrosshairOnAim" value="true" />		
 		<property class="Action0">
 		<property name="Magazine_size" value="3" />
 		</property>
@@ -10018,11 +10065,12 @@ which does not exist, yet. -->
  	<property name="DegradationBreaksAfter" value="false" />
 	<property name="SoundJammed" value="ItemNeedsRepair" />
  	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="CrosshairOnAim" value="true" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
 		<property name="Hitmask_override" value="Arrow" />
 		<property name="Delay" value="0.4" />
-		<property name="Magazine_size" value="5" />
+		<property name="Magazine_size" value="6" />
 		<property name="Magazine_items" value="crossbowBolt, ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt" />
 		<property name="Rays_spread" value="0.002" />
 		<property name="Reload_time" value="1.5" />
